@@ -11,17 +11,26 @@
     <title> W.Notícias</title>
 </head>
 <body class="escurecer">
-<header class="header-mobile">
+<header>
     <img src="./assets/images/logo.svg" alt="logo do site de noticias W. ">
     <button>
         <img src="./assets/images/icon-menu.svg" alt="ícone de menu hamburguer">
     </button>
-    <nav class="abrir">
+    <nav>
+    <nav class="mobile">
       <button>
         <img src="./assets/images/icon-menu-close.svg" alt="icone contagem de x para fehcar menu" > 
       </button>
-
+ 
          <a href="#">Home </a>
+     <a href="#"> Novo</a>
+      <a href="#">Popular </a>
+       <a href="#">Trending </a>
+        <a href="#">Categoria </a>
+    </nav>
+
+    
+      <nav class="desktop">  <a href="#">Home </a>
      <a href="#"> Novo</a>
       <a href="#">Popular </a>
        <a href="#">Trending </a>
@@ -32,7 +41,11 @@
 </header> 
 <main>
         <section class ="primeira-secao">
-            <img src="./assets/images/image-web-3-mobile.jpg" alt="icone de puzzle colorido">
+            <picture>
+                <source media="(min-width:700px)"srcset="./assets/image-web-3-desktop.jpg">
+                 <img src="./assets/images/image-web-3-mobile.jpg" alt="icone de puzzle colorido">
+
+            </picture>
 
             <h1>O futuro brilhante da Web 3.0?</h1>
             <p>Nós mergulhamos na próxima evolução da web que afirma devolver o poder das plataformas para as mãos das pessoas. Mas será que ela realmente está cumprindo sua promessa?</p>
